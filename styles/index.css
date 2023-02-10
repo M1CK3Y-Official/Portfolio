@@ -1,5 +1,6 @@
 @import url('./nav.css');
 @import url('./general.css');
+@import url('./gallery.css');
 
 
 .sec-1 {
@@ -86,7 +87,9 @@ button:hover {
 
 
 
-
+.work {
+    height: 100vh;
+}
 
 .projects {
     height: auto;
@@ -105,4 +108,20 @@ button:hover {
 
 .project-section {
     display: grid;
+}
+
+
+.break {
+
+}
+
+.item {
+    background-image: linear-gradient(236deg, #0000A4, #5858C9);
+    /* padding: 1em; */
+    min-height: 250px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
 }

@@ -1,0 +1,15 @@
+.projects {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+    grid-gap: 1em;
+}
+
+/* @media (min-width: 600px) {
+    .projects {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 336px);
+        place-content: center;
+        grid-gap: 1em;
+    }    
+} */
