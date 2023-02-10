@@ -1,0 +1,49 @@
+nav {
+    height: 10vh;
+    background: linear-gradient(#F0EFEF25 0%, #1c1c1c00 100%);
+    box-shadow: 0 2px 25px #00000050;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    gap: 4em;
+    margin-right: 12.5%;
+    
+}
+
+nav ul a {
+    color: #F0EFEF;
+    text-decoration: none;
+    font-size: clamp(1rem, 0.6966rem + 1.2945vw, 2.25rem);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 5px 2.5px 2.5px #00000050;
+    letter-spacing: 3.5px;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul a:hover {
+    color: #CF2727;
+    transform: translateY(-5px);
+}
+
+nav ul a li {
+    list-style: none;
+    
+}
+
+
+.logo {
+    width: 40%;
+    aspect-ratio: 1/1;
+}
+
+.logo-link {
+    margin-left: 12.5%;
+}
+
