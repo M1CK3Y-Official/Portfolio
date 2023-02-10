@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
-
 box-sizing: border-box;
 margin: 0;
 padding: 0;
@@ -16,13 +15,11 @@ body {
 font-size: 1.6rem;
 }
 
-
-
 main {
-    
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3cpath d='M203.84 265.75L377.05 365.75L377.05 565.75L203.84 665.75L30.63 565.75L30.63 365.75zM723.47 -34.25L896.68 65.75L896.68 265.75L723.47 365.75L550.26 265.75L550.26 65.75zM896.68 265.75L1069.89 365.75L1069.89 565.75L896.68 665.75L723.47 565.75L723.47 365.75zM723.47 565.75L896.68 665.75L896.68 865.75L723.47 965.75L550.26 865.75L550.26 665.75zM896.68 865.75L1069.89 965.75L1069.89 1165.75L896.68 1265.75L723.47 1165.75L723.47 965.75zM1243.1 265.75L1416.31 365.75L1416.31 565.75L1243.1 665.75L1069.89 565.75L1069.89 365.75zM1069.89 565.75L1243.1 665.75L1243.1 865.75L1069.89 965.75L896.68 865.75L896.68 665.75zM1243.1 865.75L1416.31 965.75L1416.31 1165.75L1243.1 1265.75L1069.89 1165.75L1069.89 965.75zM1589.52 265.75L1762.73 365.75L1762.73 565.75L1589.52 665.75L1416.31 565.75L1416.31 365.75zM1416.31 1165.75L1589.52 1265.75L1589.52 1465.75L1416.31 1565.75L1243.1 1465.75L1243.1 1265.75zM1762.73 -34.25L1935.94 65.75L1935.94 265.75L1762.73 365.75L1589.52 265.75L1589.52 65.75zM1762.73 565.75L1935.94 665.75L1935.94 865.75L1762.73 965.75L1589.52 865.75L1589.52 665.75z' stroke='rgba(240%2c 239%2c 239%2c 0.06274509803921569)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"), linear-gradient(-135deg, #cf27279a 0%, #1c1c1cc9 40%), url('../assets/backgrounds/bg-full.jpg');
-
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto;
 }
