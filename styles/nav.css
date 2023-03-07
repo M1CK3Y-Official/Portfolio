@@ -1,27 +1,31 @@
-nav {
+
+header {
     height: 10vh;
     background: linear-gradient(#F0EFEF25 0%, #1c1c1c00 100%);
     box-shadow: 0 2px 25px #00000050;
-    
     padding: 0 5%;
     z-index: 10; 
 }
 
-.indhold {
+nav {
     max-width: 1440px;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
 }
 
-.indhold ul {
+nav .menus {
     display: none;
     gap: 4em;
 }
 
-.indhold ul a {
+nav .menus a {
     color: #F0EFEF;
     text-decoration: none;
     font-size: clamp(0.5rem, 0.0752rem + 1.8123vw, 2.25rem);
@@ -32,12 +36,12 @@ nav {
     transition: 0.2s ease-in-out;
 }
 
-.indhold ul a:hover {
+nav .menus a:hover {
     color: #CF2727;
     transform: translateY(-5px);
 }
 
-.indhold ul a li {
+nav .menus a li {
     list-style: none;
 }
 
@@ -47,26 +51,44 @@ nav {
     aspect-ratio: 1/1;
 }
 
-.indhold .fa-bars {
+nav .fa-bars {
     display: flex;
     color: #F0EFEF;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-shadow: 5px 2.5px 2.5px #00000050;
     transition: 0.2s ease-in-out;
 }
-.indhold .fa-bars:hover {
+nav .fa-bars:hover {
     color: #e7afaf;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
+
+.menu-container {
+    width: 50%;
+    /* min-height: 40px; */
+    background-color: #00000050;
+    position: absolute;
+    /* left: 0; */
+    right: 30px;
+    top: 10vh;
+    box-shadow: 0px 3px 6px #00000029;
+    display: none;
+    gap: 1em;
+}
+
+.menu-container.activemenu {
+    position: relative;
+}
+
 
 
 @media (min-width: 768px) {
 
-    .indhold ul {
+    nav .menus {
         display: flex;
     }
 
-    .indhold .fa-bars {
+    nav .fa-bars {
         display: none;
     }   
 
