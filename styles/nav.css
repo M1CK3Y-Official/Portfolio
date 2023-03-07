@@ -5,16 +5,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1em; */
-    padding: 0 12.5%;
+    padding: 0 5%;
     z-index: 10;
+    
 }
 
 nav ul {
-    display: flex;
+    display: none;
     gap: 4em;
-    /* margin-right: 12.5%; */
-    
 }
 
 nav ul a {
@@ -35,7 +33,6 @@ nav ul a:hover {
 
 nav ul a li {
     list-style: none;
-    
 }
 
 
@@ -44,7 +41,28 @@ nav ul a li {
     aspect-ratio: 1/1;
 }
 
-.logo-link {
-    /* margin-left: 12.5%; */
+
+
+nav .fa-bars {
+    display: flex;
+    color: #F0EFEF;
+    font-size: 3rem;
+}
+
+
+@media (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav .fa-bars {
+        display: none;
+    }
+
+    nav {
+        padding: 0 12.5%;
+    }
+
 }
 
