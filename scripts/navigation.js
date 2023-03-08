@@ -33,6 +33,8 @@ let linksArr = [
 
 const linksContainer = document.querySelector('.navigation-links');
 
+const nav = document.querySelector('.navigation');
+
 linksArr.forEach((linkObj) => {
 
     linksContainer.insertAdjacentHTML('beforeend', `<a href="${linkObj.link}">${linkObj.title}</a>`);
@@ -42,14 +44,12 @@ linksArr.forEach((linkObj) => {
 	// Sørger for at menuen lukker, efter der er blevet trykket på et menupunkt
 
     linksContainer.addEventListener('click', () => {
-        const nav2 = document.querySelector('.navigation');
-        nav2.classList.remove('active');
+        nav.classList.remove('active');
     })
 })
 
 const navHandle = document.querySelector('.navigationHandle');
 navHandle.addEventListener('click', () => {
 
-    const nav = document.querySelector('.navigation');
     nav.classList.toggle('active');
 })

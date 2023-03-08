@@ -2,11 +2,6 @@
 @import url('./general.css');
 @import url('./gallery.css');
 
-
-.sec-1 {
-    /* height: 90vh; */
-}
-
 .container {
     max-width: 1440px;
     height: auto;
@@ -145,21 +140,14 @@ button:hover {
 }
 
 .content:hover {
-    /* filter: blur(0.35rem); */
     filter: brightness(0.35);
 }
 
  @media (min-width: 375px) {
     
-    
-    .item {
-        /* min-height: 250px; */
-    }
-    
     .work {
         height: auto;
     }
     
-
 } 
 
