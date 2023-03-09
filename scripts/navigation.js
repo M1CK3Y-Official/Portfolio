@@ -25,6 +25,10 @@ let linksArr = [
         title : 'About'
     },
     {
+        link : '#projects',
+        title : 'Projects'
+    },
+    {
         link : '#contact',
         title : 'Contact'
     }
