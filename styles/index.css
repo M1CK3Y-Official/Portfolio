@@ -26,6 +26,7 @@
     box-shadow: 0 0 75px #ffffff75;
     margin: 2.5em auto 1.5em auto;
     transition: 0.25s ease-in-out;
+    filter: grayscale(1);
 }
 
 
@@ -142,6 +143,7 @@ button {
     .pic:hover {
         box-shadow: 0 0 75px #cf2727;
         transform: translateY(-10px);
+        filter: grayscale(0);
     }
 
     .content:hover {
