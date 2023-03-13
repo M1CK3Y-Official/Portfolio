@@ -136,9 +136,6 @@ button {
 
  @media (min-width: 375px) {
     
-    .work {
-        height: auto;
-    }
 
     .pic:hover {
         box-shadow: 0 0 75px #cf2727;
