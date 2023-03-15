@@ -25,11 +25,8 @@
     border-radius: 100%;
     box-shadow: 0 0 75px #ffffff75;
     margin: 2.5em auto 1.5em auto;
-    transition: 0.25s ease-in-out;
     filter: grayscale(1);
 }
-
-
 
 h1 {
     background-image: linear-gradient(180deg, #F0EFEF, #cccccc);
@@ -78,7 +75,6 @@ button {
     text-transform: uppercase;
     letter-spacing: 1.6px;
     box-shadow: 0 2px 10px #00000050;
-    transition:  0.2s ease-in-out;
 }
 
 .work {
@@ -122,7 +118,6 @@ button {
 .content {
     width: 100%;
     height: 100%;
-    transition: all 0.2s ease-in-out;
 }
 
 
@@ -140,48 +135,128 @@ button {
 
     border: 2px solid #F0EFEF00;
     padding: 1em;
-
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
 }
 
-.contact > div p {
-    color: #F0EFEF;
+.contact > h2 {
+    margin-bottom: 1em;
+}
+
+.contact-container {
+    margin: 1.5em auto;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3em;
+}
+
+.contact > div code {
     line-height: 2em;
     font-size: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
-    /* margin: 1em auto; */
+    text-align: center;
+    background-color: #00000050;
+    padding: 0.25em;
 }
 
-.icon {
+.contact > div code a {
+    color: #CF2727;
+    text-decoration: underline;
+}
+
+.icon > .fa-github, .icon > .fa-linkedin, .icon > .fa-envelope {
+    font-size: 10rem;
+    background: #F0EFEF;
+    color: #1c1c1c;
+    padding: 0.25em;
+    border-radius: 100%;
+    margin-bottom: 0.15em;
     aspect-ratio: 1/1;
-    max-width: 150px;
-    height: auto;
-    background-color: white;
+    width: 150px;
+    box-shadow: 0 2px 10px #00000050;
 }
 
-.fa-phone, .fa-linkedin, .fa-envelope {
+.fa-link {
+    color: #F0EFEF;
+    font-size: 1.75rem;
+}
+
+.fa-paper-plane {
+    color: #F0EFEF;
+    font-size: 1.75rem;
+}
+
+.social {
+    background: rgb(28,28,28);
+    box-shadow: 0 2px 10px #00000050;
+    background: linear-gradient(25deg, rgba(28,28,28,0.5) 0%, rgba(240, 239, 239, 0.15) 40%, rgba(28,28,28,0.25) 0%);
+    padding: 0.5em;
+}
+
+
+
+footer {
+    height: 5vh;
+    background: linear-gradient(#1c1c1c00 0%, #F0EFEF25 100%);
+    box-shadow: 0 2px 25px #00000050;
+    padding: 0 5%;
+    z-index: 10; 
+    
+}
+
+.footer-container {
+    max-width: 1440px;
+    height: 5vh;
+    z-index: 100;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.copyright {
+    color: #F0EFEF;
 }
 
 
 
  @media (min-width: 768px) {
     
+    .pic {
+        transition: 0.25s ease-in-out;
+    }
     .pic:hover {
         box-shadow: 0 0 75px #cf2727;
         transform: translateY(-10px);
         filter: grayscale(0);
     }
 
+    .content {
+        transition: all 0.2s ease-in-out;
+    }
     .content:hover {
         filter: brightness(0.35);
     }
 
+    button {
+        transition:  0.2s ease-in-out;
+    }
     button:hover {
         cursor: pointer;
         background:#7f2727;
+    }
+
+    .icon > .fa-github, .icon > .fa-linkedin, .icon > .fa-envelope {
+        transition: box-shadow 0.2s, color 0.2s ease-in-out;
+    }
+    .icon > .fa-linkedin:hover, .icon > .fa-envelope:hover, .icon > .fa-github:hover {
+        color: #CF2727;
+        box-shadow: 0 0 75px #cf2727;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
     }
     
 } 
