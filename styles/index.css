@@ -196,7 +196,7 @@ button {
 
 
 footer {
-    height: 5vh;
+    height: 10vh;
     background: linear-gradient(#1c1c1c00 0%, #F0EFEF25 100%);
     box-shadow: 0 2px 25px #00000050;
     padding: 0 5%;
@@ -206,7 +206,7 @@ footer {
 
 .footer-container {
     max-width: 1440px;
-    height: 5vh;
+    height: 10vh;
     z-index: 100;
     display: flex;
     justify-content: center;
