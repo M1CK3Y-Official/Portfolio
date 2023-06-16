@@ -10,5 +10,12 @@
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item {
+        flex: 0 calc(50% - 8px);
     }
 }
